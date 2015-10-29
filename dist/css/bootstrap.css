@@ -3467,6 +3467,25 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
+html.vertical-align-middle {
+  width: 100%;
+  height: 100%;
+}
+html.vertical-align-middle body {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+html.vertical-align-middle body .table-row {
+  display: table-row;
+}
+html.vertical-align-middle body .table-row > section,
+html.vertical-align-middle body > section {
+  display: table-cell;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  vertical-align: middle;
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity .15s linear;
